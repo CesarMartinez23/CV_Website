@@ -6,24 +6,273 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!-- Titulo -->
+  <title>Pagina Principal</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="imagen/x-icon" href="assets/icon.png">
 
-  <!-- Bootstrap Icons -->
+  <!-- Agregamos Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- Agregamos nuestra hoja de estilo CSS -->
+  <link rel="stylesheet" href="./style/style.css">
+
+  <!-- Fuentes y estilos de Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik+Dirt&display=swap"
+    rel="stylesheet">
+
+  <!-- iconos de bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./style/style.css">
-  <title>Home Page</title>
 </head>
 
 <body>
-  <h1>Hello World!</h1>
+
+  <!-- barra de navegacion -->
+
+  <nav class="hover navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+
+      <!-- Este boton aparecera cuando hagas mas pequeña la pagina -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+
+        <a class="icon navbar-brand" href="#">
+          <img src="assets/logo.png" width="80" alt="Logo de la página web">
+        </a>
+
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#portada">Portada</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#curriculum">Curriculum</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#ejercicio">Ejercicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#conclusion">Conclusion</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Seccion de la Portada  -->
+
+  <section id="portada" class="portada-seccion align-items-stretch">
+    <div class="portada-principal d-flex flex-column justify-content-center align-items-center">
+      <h1>Universidad Gerardo Barrios</h1>
+      <h2>Fecultad de Ciencia y Tecnologia</h2>
+      <img src="assets/ugb.png" alt="esta">
+
+      <h3>Asignatura:</h3>
+      <p>Programacion Computacional IV</p>
+
+      <h3>Docente:</h3>
+      <p>Ing Gissela Yasmin</p>
+
+      <h3>Terea</h3>
+      <p>Bootstrap y Vui</p>
+
+      <h3>Intregantes del Equipo:</h3>
+      <p>Luna Acosta</p>
+      <p>Martinez Alvarenga</p>
+      <p>Ricardo </p>
+
+      <h3>CICLO I, 2023</h3>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- Section  para lo Curriculum -->
+  <section id="curriculum" class="seccion-curriculum seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+
+        <!-- Cesar -->
+        <div class="columna col-12 col-md-4">
+
+          <img src="assets/cesarMartinez.jpg" alt="Cesar Martinez">
+
+          <p class="curriculum-titulo">Cesar Martinez</p>
+
+          <div class="button-ver col-12">
+            <a href="#">
+              <button type="button">
+                Ver
+              </button>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Ricardo -->
+        <div class="columna col-12 col-md-4">
+          <img src="assets/banner.png" alt="Ricardo Alvares">
+
+          <p class="curriculum-titulo">Victor Ricardo</p>
+
+          <div class="button-ver col-12">
+            <a href="#">
+              <button type="button">
+                Ver
+              </button>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Kevin -->
+        <div class="columna col-12 col-md-4">
+
+          <img src="assets/lunaAcosta.jpeg" alt="Luna Acosta">
+
+          <p class="curriculum-titulo">Luna Acosta</p>
+
+          <div class="button-ver col-12">
+            <a href="index.html" target="_blank" rel="noopener noreferrer">
+              <button type="button">
+                Ver
+              </button>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Section para la solucion de ejercicio  -->
+
+  <section id="ejercicio" class="solucion-seccion seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Solucion del ejercicio</h2>
+
+      <div class="contacto col-12">
+        <button type="button" id="changeColor">
+          Siguiente
+        </button>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Seccion de Conclusion -->
+
+  <section id="conclusion" class="conclusion-seccion seccion-clara d-flex flex-column">
+    <h2 class="seccion-titulo texto-negro">Conclusión</h2>
+
+    <!-- galeria de conclusion -->
+
+    <div class="container text-center conclusion-contendor">
+      <div class="row">
+        <div class="col-12">
+          <div class="conclusion">
+            <img src="assets/banner.png" alt="Banner">
+            <div class="overlay">
+              <p>Ir a conclusion</p>
+              <div class="iconos-contenedor">
+
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-arrow-right-circle-fill"></i>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- Seccion de Contacto -->
+  <section class="contacto seccion-oscura">
+    <div class="container">
+      <div class="container text-center d-flex justify-content-evenly rectangulo">
+        <div class="row">
+
+          <div class="col-12 col-md-4 seccion-titulo">
+            Hablemos
+          </div>
+
+          <div class="col-12 col-md-4 descripcion">
+            Contactame para tal cosa
+          </div>
+
+          <div class="col-12 col-md-4">
+            <a href="#">
+              <button type="button">
+                Contacto
+              </button>
+            </a>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- seccion de fooder  -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="assets/logo.png" alt="Logo del portafolio">
+    <p class="footer-texto text-center">Programacion<br>Computacional IV</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="#">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="#">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="#">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">Creado por Cesar, Ricardo, Luna (2023) &#169;</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

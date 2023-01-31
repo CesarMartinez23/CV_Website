@@ -1,0 +1,396 @@
+/* Estilos para la barra de navegacion  */
+
+.navbar {
+  padding: 10px;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+}
+
+img {
+  object-fit: cover;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hover a img:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+.hover li a {
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  font-family: "Rubik Dirt", cursive;
+  letter-spacing: 0.2em;
+}
+
+.hover li a:hover {
+  color: white;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+/* Reglas css generales  */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "Rubik Dirk", cursive;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.seccion-oscura {
+  color: white;
+  background: black;
+}
+
+.seccion-clara {
+  color: black;
+  background: white;
+}
+
+/* Seccion de la Portada   */
+
+.portada-seccion {
+  background-image: linear-gradient(
+    to right top,
+    #5b163d,
+    #531c46,
+    #49224e,
+    #3c2853,
+    #2f2c56,
+    #24345d,
+    #153b61,
+    #004264,
+    #004f6b,
+    #005b6f,
+    #00676f,
+    #1d736e
+  );
+  min-height: 450px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Rubik Dirt", cursive;
+  color: white;
+}
+
+.portada-principal {
+  padding: 3rem;
+}
+
+.portada-principal img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.portada-principal h2 {
+  font-size: 2rem;
+  color: white;
+  font-family: "Rubik Dirt", cursive;
+}
+
+.portada-principal h3 {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Rubik Dirt", cursive;
+}
+
+.portada-principal p {
+  font-size: 1rem;
+  color: white;
+  font-family: "Rubik Dirt", cursive;
+}
+
+/* Section  para lo Curriculum  */
+
+.seccion-curriculum {
+  padding: 40px 40px 60px 40px;
+}
+
+.seccion-curriculum img {
+  height: 200px;
+  width: 220px;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.curriculum-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.button-ver button {
+  height: 40px;
+  width: 150px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #2f2c56;
+  transition: all 0.5s ease-in;
+}
+
+.button-ver button:hover {
+  color: black;
+  background: white;
+}
+
+.seccion-curriculum .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.5s all ease-in;
+}
+
+.seccion-curriculum .columna:hover {
+  color: white;
+  background: #101032;
+}
+
+/* Section para la solucion de ejercicio */
+
+.solucion-seccion {
+  height: 500px;
+  padding: 10px;
+}
+
+.solucion-seccion .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Seccion de Conclusion  */
+
+.conclusion-seccion {
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.conclusion-seccion h2 {
+  font-size: 2rem;
+  color: black;
+  font-family: "Rubik Dirt", cursive;
+}
+
+.texto-negro {
+  color: black;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.conclusion-seccion img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: block;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+
+.conclusion-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.conclusion {
+  position: relative;
+}
+
+.conclusion:hover img {
+  opacity: 0.2;
+}
+
+.conclusion:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: block;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+}
+
+/* Contacto */
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: black;
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+/* Para los elemetos responsivos  */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
